@@ -7,6 +7,35 @@
 </head>
 <body>
 
+  <script type="text/javascript">
+      function openPdf(){
+
+        var omyFrame = document.getElementById("myFrame");
+        omyFrame.src = "pdf.pdf";
+      
+
+      if (omyFrame.style.display == "block" ) {
+        omyFrame.style.display="none";
+      } 
+      else {
+        omyFrame.style.display="block";
+      }
+      }
+
+    </script>
+
+    <script type="text/javascript">
+      function openPdfyoutube() {
+          var x = document.getElementById("myFrameyoutube");
+          
+          if (x.style.display == "none") {
+              x.style.display = "block";
+          } else {
+              x.style.display = "none";
+          }
+      }
+    </script>
+
 <div class="navbar">
 <a href="index.html">Home</a>
 <div class="dropdown">
@@ -46,7 +75,17 @@
 
 <div class = "heading">
 	Inca
+  <a href = "#"><img id="Img" src="youtube-icon.png" onclick="openPdfyoutube('myFrameyoutube');" href="#" class = "info-youtube" /></a>
+
+    <a href = "#"><img id="Img" src="info.png" onclick="openPdf();" href="#" class = "info" /></a>  
+
+    <iframe id="myFrame" class = "info-display"></iframe>
+
+  
 </div>
+<iframe class = "info-display-youtube" id = "myFrameyoutube"
+src="https://www.youtube.com/embed/UO5ktwPXsyM">
+</iframe>
 
 <div class='grid-container'>
 	<div></div>
@@ -79,11 +118,23 @@
     “was the most sophisticated found among
     native peoples” in the Americas.</p>
 
+    
+
     <div style = "
     width:100%;
     text-align:center;
     margin-top: 20px;
     "><img src="pyramid-trans.png" class = "image"></div>
+<div style = "
+  font-weight: bold;
+  padding:20px;
+  text-align: center;
+  text-decoration: underline;
+  ">Incan Music</div>
+  <p><audio controls class = "audio-player">
+  <source src="inca-music.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio></p>
 	</div>
 
 	<div></div>

@@ -129,6 +129,52 @@ html, body {
   height:100% 
 }
 
+.info {
+  height: 70px;
+  padding-top:20px;
+  float:right;
+  width:70px;
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 99999999999;
+
+}
+
+.info-youtube {
+  height: 70px;
+  padding-top: 20px;
+  float:left;
+  width:99.56px;
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 99999999999;
+
+}
+
+.info-display {
+  position: absolute;
+  height: 500px;
+  width: 38%;
+  display: none;
+  z-index: 999999;
+  right: 10px;
+  border-radius: 10px;
+}
+
+.info-display-youtube {
+  position: absolute;
+  height: 500px;
+  width: 38%;
+  z-index: 999999;
+  left: 10px;
+  border-radius: 10px;
+  display: none;
+}
+.audio-player {
+  width: 75%;
+  margin-left: 12.5%;
+}
+
 @font-face {
     font-family: ancient-font;
     src: url(Requiem.ttf);
